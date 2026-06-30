@@ -23,6 +23,7 @@ interface SceneState {
   setPhase: (p: ScenePhase) => void;
   setScrollProgress: (n: number) => void;
   toggleAudio: () => void;
+  setAudio: (b: boolean) => void;
   setReducedMotion: (b: boolean) => void;
   setTerminalOpen: (b: boolean) => void;
   unlockKonami: () => void;
@@ -39,6 +40,7 @@ export const useScene = create<SceneState>((set) => ({
   setPhase: (p) => set({ phase: p }),
   setScrollProgress: (n) => set({ scrollProgress: n }),
   toggleAudio: () => set((s) => ({ audioOn: !s.audioOn })),
+  setAudio: (b) => set({ audioOn: b }),
   setReducedMotion: (b) => set({ reducedMotion: b }),
   setTerminalOpen: (b) => set({ terminalOpen: b }),
   unlockKonami: () => set({ konamiUnlocked: true }),

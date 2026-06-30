@@ -3,7 +3,7 @@ import Script from "next/script";
 import { Inter, JetBrains_Mono, Fraunces, Instrument_Serif } from "next/font/google";
 import { LenisProvider } from "@/components/providers/LenisProvider";
 import { MotionProvider } from "@/components/providers/MotionProvider";
-import { SceneRootDynamic, CursorDynamic } from "@/components/ClientChrome";
+import { SceneRootDynamic, CursorDynamic, TerminalOverlayDynamic, KonamiProviderDynamic, ConsoleSigDynamic } from "@/components/ClientChrome";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -146,6 +146,9 @@ export default function RootLayout({
         <MotionProvider />
         <SceneRootDynamic />
         <CursorDynamic />
+        <TerminalOverlayDynamic />
+        <KonamiProviderDynamic />
+        <ConsoleSigDynamic />
         {children}
         <Script
           id="ld-person"
