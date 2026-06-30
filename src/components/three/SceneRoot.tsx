@@ -47,7 +47,7 @@ export function SceneRoot() {
       data-scene-root
     >
       <Canvas
-        camera={{ position: [0, 0, 4.6], fov: 38 }}
+        camera={{ position: [0, 0, 7.5], fov: 36 }}
         dpr={[1, 1.5]}
         gl={{
           antialias: true,
@@ -68,8 +68,8 @@ export function SceneRoot() {
 
           <EffectComposer multisampling={0}>
             <Bloom
-              intensity={0.85}
-              luminanceThreshold={0.15}
+              intensity={0.45}
+              luminanceThreshold={0.4}
               luminanceSmoothing={0.6}
               mipmapBlur
             />

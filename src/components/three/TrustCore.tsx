@@ -22,7 +22,7 @@ export function TrustCore() {
   const uniforms = useMemo(
     () => ({
       uTime: { value: 0 },
-      uDistort: { value: 0.22 },
+      uDistort: { value: 0.18 },
       uAudio: { value: 0 },
       uPhase: { value: 0 },
       uColorA: { value: new THREE.Color("#d4ff3a") },
@@ -82,16 +82,17 @@ export function TrustCore() {
   });
 
   return (
-    <group>
+    <group position={[0.9, 0, 0]}>
       {/* Inner solid core with custom shader */}
-      <mesh ref={meshRef}>
+      <mesh ref={meshRef} scale={1.05}>
         <icosahedronGeometry args={[1, 24]} />
         <shaderMaterial
           ref={matRef}
           vertexShader={trustCoreVert}
           fragmentShader={trustCoreFrag}
           uniforms={uniforms}
-          transparent={false}
+          transparent
+          depthWrite={false}
         />
       </mesh>
 
@@ -103,18 +104,6 @@ export function TrustCore() {
           wireframe
           transparent
           opacity={0.08}
-        />
-      </mesh>
-
-      {/* Outer faint sphere of light */}
-      <mesh>
-        <sphereGeometry args={[2.4, 24, 24]} />
-        <meshBasicMaterial
-          color="#5b2bff"
-          transparent
-          opacity={0.04}
-          side={THREE.BackSide}
-          depthWrite={false}
         />
       </mesh>
     </group>

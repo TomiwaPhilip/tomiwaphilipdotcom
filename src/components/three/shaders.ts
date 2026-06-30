@@ -121,13 +121,15 @@ void main() {
   vec3 baseB = mix(uColorB, uColorA * 0.6, phaseMix * 0.4);
   vec3 base = mix(baseA, baseB, mixT);
 
-  // Inner core darkening + rim glow
-  vec3 col = base * (0.35 + 0.65 * (1.0 - fresnel));
-  col += uColorRim * fresnel * (1.2 + uAudio * 0.8);
+  // Inner core darkening + rim glow — fresnel-led so the body is mostly a rim halo
+  vec3 col = base * (0.18 + 0.45 * (1.0 - fresnel));
+  col += uColorRim * fresnel * (1.6 + uAudio * 0.8);
 
   // Faint scan-line / pulse
   float pulse = 0.5 + 0.5 * sin(uTime * 1.2 + vNoise * 6.0);
-  col += baseA * 0.04 * pulse;
+  col += baseA * 0.06 * pulse;
 
-  gl_FragColor = vec4(col, 1.0);
+  // Alpha weighted so the center is more transparent than the rim — feels ethereal
+  float alpha = clamp(0.22 + fresnel * 0.85, 0.0, 1.0);
+  gl_FragColor = vec4(col, alpha);
 }`;

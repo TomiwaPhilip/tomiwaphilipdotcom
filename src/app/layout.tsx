@@ -140,7 +140,7 @@ export default function RootLayout({
       lang="en"
       className={`${fontSans.variable} ${fontMono.variable} ${fontDisplay.variable} ${fontSerifItalic.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[var(--bg)] text-[var(--fg)]">
+      <body className="min-h-full flex flex-col text-[var(--fg)]">
         <a href="#main" className="skip-link">Skip to content</a>
         <LenisProvider />
         <MotionProvider />
