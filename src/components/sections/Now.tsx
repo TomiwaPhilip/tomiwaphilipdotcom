@@ -57,7 +57,7 @@ export function Now() {
                 aria-hidden
                 className="inline-block w-[7px] h-[7px] rounded-full bg-[var(--accent)] pulse-dot"
               />
-              <span className="text-[var(--accent)]">tomiwa@settlement-engine</span>
+              <span className="text-[var(--accent)]">tomiwa@shakes-labs</span>
               <span className="text-[var(--line-strong)]">:</span>
               <span>~/now</span>
               <span className="text-[var(--line-strong)]">$</span>

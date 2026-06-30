@@ -24,7 +24,7 @@ export function ConsoleSig() {
       "color:#7a7a74;font:12px ui-monospace,monospace;padding:4px 0;",
     );
     console.log(
-      "%cif you're reading this, you probably care about how things are built. let's talk → tomiwaphilip1100@gmail.com",
+      "%cif you're reading this, you probably care about how things are built. let's talk → tomiwa@shakeslabs.com",
       "color:#5b2bff;font:12px ui-monospace,monospace;padding:2px 0 10px;",
     );
   }, []);

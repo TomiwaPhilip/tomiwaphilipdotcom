@@ -21,11 +21,34 @@ export interface Mission {
 
 export const missions: Mission[] = [
   {
+    slug: "shakes-labs",
+    company: "Shakes Labs",
+    role: "Founder · CEO · CTO",
+    period: "2026 — Present",
+    status: "active",
+    axis: "both",
+    oneLiner:
+      "Long-term technology partnership studio shipping AI, Web3, mobile, and web for ventures that compound.",
+    metrics: [
+      { label: "products delivered", value: "20", suffix: "+" },
+      { label: "discipline", value: "AI · WEB3", suffix: "" },
+      { label: "engagement model", value: "long-term", suffix: "" },
+    ],
+    problem:
+      "Ambitious teams need engineering partners who can ship across AI, Web3, mobile, and core product without juggling four vendors. Most studios optimize for billable hours, not compounding outcomes.",
+    approach:
+      "Founded Shakes Labs as a long-horizon partnership studio: ride-along CTO services, product + infra co-design, and a shared bench across AI, Web3, mobile, and web. Each engagement starts from a thesis, not a backlog — we earn the right to stay by making the next sprint cheaper than the last.",
+    impact:
+      "20+ production products delivered. Several clients now run their entire technical roadmap through Shakes Labs. The studio is the umbrella for everything I'm building — ventures, advisory, and the lab.",
+    stack: ["TypeScript", "Python", "Rust", "Solidity", "Next.js", "React Native", "PostgreSQL", "AWS"],
+    link: "https://shakeslabs.com",
+  },
+  {
     slug: "vouchify",
     company: "Vouchify",
     role: "Chief Technical Officer",
-    period: "2026 — Present",
-    status: "active",
+    period: "2024 — 2026",
+    status: "shipped",
     axis: "both",
     oneLiner:
       "Trust-as-a-Service settlement engine for cross-border crypto-to-fiat liquidity.",
@@ -35,11 +58,11 @@ export const missions: Mission[] = [
       { label: "fraud loss reduction", value: "45", suffix: "%" },
     ],
     problem:
-      "Cross-border B2B settlements are slow, opaque, and stalk by counterparty risk. The status quo is correspondent banking — expensive, sluggish, jurisdiction-locked.",
+      "Cross-border B2B settlements were slow, opaque, and stalked by counterparty risk. The status quo was correspondent banking — expensive, sluggish, jurisdiction-locked.",
     approach:
-      "Architected a high-performance settlement engine running 100,000+ daily transactions on stablecoin rails with 99.99% uptime. Layered a proprietary Trust-as-a-Service (TaaS) protocol on top — decentralized verification + multi-sig — to eliminate counterparty risk. LLM-driven anomaly detection monitors transaction patterns in real time for fraud and regional compliance.",
+      "Architected a high-performance settlement engine running 100,000+ daily transactions on stablecoin rails with 99.99% uptime. Layered a proprietary Trust-as-a-Service (TaaS) protocol on top — decentralized verification + multi-sig — to eliminate counterparty risk. LLM-driven anomaly detection monitored transaction patterns in real time for fraud and regional compliance.",
     impact:
-      "45% reduction in fraud-related losses. Compliance with evolving regional fintech regulations baked into the runtime. A trust primitive that B2B and retail users can actually rely on.",
+      "45% reduction in fraud-related losses. Compliance with evolving regional fintech regulations baked into the runtime. A trust primitive that B2B and retail users could actually rely on.",
     stack: ["TypeScript", "Rust", "Solidity", "PostgreSQL", "Redis", "AWS", "LLM Ops"],
   },
   {
@@ -120,17 +143,17 @@ export interface Experience {
 
 export const experience: Experience[] = [
   {
-    company: "Vouchify",
-    role: "Chief Technical Officer",
+    company: "Shakes Labs",
+    role: "Founder · CEO · CTO",
     period: "2026 — Present",
-    blurb: "Architecting a settlement engine + Trust-as-a-Service protocol on stablecoin rails.",
+    blurb: "Founded a long-term technology partnership studio — mobile, web, AI, Web3. 20+ products delivered for ventures that compound.",
     axis: "both",
   },
   {
-    company: "Shakes Labs",
-    role: "Founder",
-    period: "2026 — Present",
-    blurb: "Building a long-term technology partnership studio — mobile, web, AI, and Web3.",
+    company: "Vouchify",
+    role: "Chief Technical Officer",
+    period: "2024 — 2026",
+    blurb: "Architected the settlement engine + Trust-as-a-Service protocol on stablecoin rails. 100k+ tx/day, 99.99% uptime.",
     axis: "both",
   },
   {
@@ -305,13 +328,13 @@ export const now: NowItem[] = [
   {
     kind: "building",
     label: "Shakes Labs",
-    detail: "Long-term technology partnership studio — mobile, web, AI, Web3. 20+ delivered.",
+    detail: "Founder · CEO · CTO. Long-term technology partnership studio — mobile, web, AI, Web3. 20+ delivered, more in flight.",
     href: "https://shakeslabs.com",
   },
   {
     kind: "shipping",
-    label: "Vouchify settlement engine v2",
-    detail: "Real-time LLM anomaly detection rolling out to the full transaction graph.",
+    label: "Trust-as-a-Service — productized",
+    detail: "Packaging the settlement-engine pattern from Vouchify into a reusable primitive that any Shakes Labs client can plug into.",
   },
   {
     kind: "thinking",

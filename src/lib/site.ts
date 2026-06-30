@@ -1,15 +1,15 @@
 export const site = {
   name: "Tomiwa Philip",
   fullName: "Tomiwa Philip Oluwasanmi",
-  role: "AI/ML Engineer · Full-Stack Web3 Developer · Entrepreneur",
+  role: "Founder · CEO · CTO at Shakes Labs · AI/ML Engineer · Full-Stack Web3 Developer",
   tagline: "I build engines that move trust and value.",
   description:
-    "Tomiwa Philip is an AI/ML engineer, full-stack Web3 developer, and entrepreneur. 9+ years building production AI systems and blockchain settlement infrastructure — Vouchify, Zet.money, Mileston, Veridaq, Ivy. Currently founding Shakes Labs.",
+    "Tomiwa Philip is the founder, CEO, and CTO of Shakes Labs — a long-term technology partnership studio shipping AI, Web3, mobile, and web. 9+ years building production systems across Vouchify, Zet.money, Mileston, Veridaq, and Ivy.",
   url: "https://tomiwaphilip.com",
   ogImage: "/og.png",
   locale: "en_US",
   location: "Abuja, Nigeria",
-  email: "tomiwaphilip1100@gmail.com",
+  email: "tomiwa@shakeslabs.com",
   socials: {
     x: "https://x.com/TomiwaIsGod",
     github: "https://github.com/TomiwaPhilip",
@@ -18,6 +18,10 @@ export const site = {
   keywords: [
     "Tomiwa Philip",
     "Tomiwa Philip Oluwasanmi",
+    "Shakes Labs",
+    "Shakes Labs Founder",
+    "Shakes Labs CEO",
+    "Shakes Labs CTO",
     "AI Engineer",
     "Machine Learning Engineer",
     "Full Stack Developer",
@@ -30,10 +34,11 @@ export const site = {
     "Zet.money",
     "Mileston",
     "Veridaq",
-    "Shakes Labs",
     "Nigeria",
     "Abuja",
+    "Founder",
     "CTO",
+    "CEO",
     "Entrepreneur",
   ],
 } as const;

@@ -51,7 +51,7 @@ export function About() {
             style={{ x: rightX }}
             className="md:col-span-5 md:pt-4 space-y-8"
           >
-            <Fact label="now" value="Founder, Shakes Labs" />
+            <Fact label="now" value="Founder · CEO · CTO, Shakes Labs" />
             <Fact label="prev" value="CTO at Vouchify · Zet.money" />
             <Fact label="origin" value="Abuja, Nigeria" />
             <Fact label="degree" value="B.Sc Computer Science · UoPeople" />

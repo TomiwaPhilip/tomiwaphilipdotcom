@@ -22,6 +22,7 @@ const HELP = `Available commands:
   help         — this message`;
 
 const WORK = [
+  "shakes-labs  · Founder · CEO · CTO — partnership studio",
   "vouchify     · Trust-as-a-Service settlement engine",
   "zet-money    · Crypto-native payment gateway",
   "mileston     · Enterprise wallet infra",
@@ -112,7 +113,7 @@ export function TerminalOverlay() {
       case "about":
         push({
           kind: "out",
-          text: `${site.fullName} · ${site.role}\nAbuja, NG · 9+ years\nBuilding: Shakes Labs · Vouchify settlement engine`,
+          text: `${site.fullName} · ${site.role}\nAbuja, NG · 9+ years\nBuilding: Shakes Labs (founder · ceo · cto)`,
         });
         break;
       case "work":
@@ -120,9 +121,9 @@ export function TerminalOverlay() {
         push({ kind: "out", text: `→ open <slug> to dive in` });
         break;
       case "open": {
-        const valid = ["vouchify", "zet-money", "mileston", "veridaq"];
+        const valid = ["shakes-labs", "vouchify", "zet-money", "mileston", "veridaq"];
         if (!arg) {
-          push({ kind: "err", text: "open needs a slug. try: open vouchify" });
+          push({ kind: "err", text: "open needs a slug. try: open shakes-labs" });
           break;
         }
         if (!valid.includes(arg)) {

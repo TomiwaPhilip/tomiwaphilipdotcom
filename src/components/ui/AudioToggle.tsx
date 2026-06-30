@@ -43,19 +43,19 @@ export function AudioToggle({ className }: { className?: string }) {
       await Tone.start();
 
       const synth = new Tone.PolySynth(Tone.AMSynth, {
-        envelope: { attack: 3, decay: 1.4, sustain: 0.6, release: 4 },
+        envelope: { attack: 2.4, decay: 1.4, sustain: 0.7, release: 4 },
         oscillator: { type: "sine" },
-        harmonicity: 1.4,
-        volume: -22,
+        harmonicity: 1.6,
+        volume: -12,
       });
-      const filter = new Tone.Filter(700, "lowpass");
-      const reverb = new Tone.Reverb({ decay: 7, wet: 0.6 });
-      const lfo = new Tone.LFO(0.06, 480, 1200).start();
+      const filter = new Tone.Filter(1400, "lowpass");
+      const reverb = new Tone.Reverb({ decay: 7, wet: 0.55 });
+      const lfo = new Tone.LFO(0.06, 900, 2200).start();
       lfo.connect(filter.frequency);
 
       synth.chain(filter, reverb, Tone.getDestination());
 
-      const chord = ["A1", "C2", "E2", "G2"];
+      const chord = ["A2", "C3", "E3", "G3"];
       synth.triggerAttack(chord);
 
       synthRef.current = {
@@ -95,10 +95,25 @@ export function AudioToggle({ className }: { className?: string }) {
 
   if (reducedMotion) return null;
 
+  // Browsers gate AudioContext.resume() behind a user gesture. We unlock it
+  // synchronously inside the click handler (before flipping zustand state) so
+  // the subsequent setup effect doesn't try to resume a still-suspended context.
+  async function handleClick() {
+    if (!audioOn) {
+      try {
+        const Tone = await import("tone");
+        await Tone.start();
+      } catch {
+        /* ignore — effect will retry */
+      }
+    }
+    toggleAudio();
+  }
+
   return (
     <button
       type="button"
-      onClick={() => toggleAudio()}
+      onClick={handleClick}
       data-cursor="link"
       aria-pressed={audioOn}
       aria-label={audioOn ? "Mute ambient sound" : "Play ambient sound"}
