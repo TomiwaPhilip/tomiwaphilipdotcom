@@ -1,6 +1,6 @@
 export const site = {
   name: "Tomiwa Philip",
-  fullName: "Tomiwa Philip Oluwasanmi",
+  fullName: "Tomiwa Philip",
   role: "Founder · CEO · CTO at Shakes Labs · AI/ML Engineer · Full-Stack Web3 Developer",
   tagline: "I build engines that move trust and value.",
   description:
@@ -17,7 +17,6 @@ export const site = {
   },
   keywords: [
     "Tomiwa Philip",
-    "Tomiwa Philip Oluwasanmi",
     "Shakes Labs",
     "Shakes Labs Founder",
     "Shakes Labs CEO",
