@@ -5,7 +5,7 @@ export const site = {
   tagline: "I build engines that move trust and value.",
   description:
     "Tomiwa Philip is the founder, CEO, and CTO of Shakes Labs — a long-term technology partnership studio shipping AI, Web3, mobile, and web. 9+ years building production systems across Vouchify, Zet.money, Mileston, Veridaq, and Ivy.",
-  url: "https://tomiwaphilip.com",
+  url: "https://www.tomiwaphilip.com",
   ogImage: "/og.png",
   locale: "en_US",
   location: "Abuja, Nigeria",
@@ -13,7 +13,7 @@ export const site = {
   socials: {
     x: "https://x.com/TomiwaIsGod",
     github: "https://github.com/TomiwaPhilip",
-    shakeslabs: "https://shakeslabs.com",
+    shakeslabs: "https://www.shakeslabs.com",
   },
   keywords: [
     "Tomiwa Philip",

@@ -41,7 +41,7 @@ export const missions: Mission[] = [
     impact:
       "20+ production products delivered. Several clients now run their entire technical roadmap through Shakes Labs. The studio is the umbrella for everything I'm building — ventures, advisory, and the lab.",
     stack: ["TypeScript", "Python", "Rust", "Solidity", "Next.js", "React Native", "PostgreSQL", "AWS"],
-    link: "https://shakeslabs.com",
+    link: "https://www.shakeslabs.com",
   },
   {
     slug: "vouchify",
@@ -630,7 +630,7 @@ export const now: NowItem[] = [
     kind: "building",
     label: "Shakes Labs",
     detail: "Founder · CEO · CTO. Long-term technology partnership studio — mobile, web, AI, Web3. 20+ delivered, more in flight.",
-    href: "https://shakeslabs.com",
+    href: "https://www.shakeslabs.com",
   },
   {
     kind: "shipping",

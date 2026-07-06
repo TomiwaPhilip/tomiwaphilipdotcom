@@ -98,7 +98,7 @@ src/
 
 ### Post-launch checklist
 
-1. **Google Search Console** — verify ownership via `metadata.verification.google` on the root layout, then submit `https://tomiwaphilip.com/sitemap.xml`.
+1. **Google Search Console** — verify ownership via `metadata.verification.google` on the root layout, then submit `https://www.tomiwaphilip.com/sitemap.xml`.
 2. **Bing Webmaster Tools** — submit the same sitemap.
 3. **301 redirect** from `tomiwaphilip.rf.gd` if the host allows it — preserves any existing link equity.
 4. Validate JSON-LD with [Google's Rich Results Test](https://search.google.com/test/rich-results).
